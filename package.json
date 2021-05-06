@@ -4,13 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "postcss src/styles.css -o docs/styles.css && cp src/index.html docs/index.html",
-    "serve": "NODE_ENV=development concurrently \"postcss src/tailwind.css -o docs/styles.css --watch src/\"  \"live-server ./docs\""
+    "build": "postcss src/styles/tailwind.css -o docs/styles/styles.css && cp src/index.html docs/index.html",
+    "serve": "NODE_ENV=development concurrently \"postcss src/styles/tailwind.css -o docs/styles/styles.css --watch src/styles\"  \"live-server ./docs\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.2.0",
     "autoprefixer": "^10.2.5",
     "postcss": "^8.2.14",
     "tailwindcss": "^2.1.2"
