@@ -1,0 +1,21 @@
+{
+  "name": "growlab.dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss src/styles.css -o build/styles.css && cp src/index.html build/index.html",
+    "serve": "NODE_ENV=development concurrently \"postcss src/tailwind.css -o build/styles.css --watch src/\"  \"live-server ./build\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.14",
+    "tailwindcss": "^2.1.2"
+  },
+  "dependencies": {
+    "postcss-cli": "^8.3.1"
+  }
+}
