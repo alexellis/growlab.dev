@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "postcss src/styles.css -o build/styles.css && cp src/index.html build/index.html",
-    "serve": "NODE_ENV=development concurrently \"postcss src/tailwind.css -o build/styles.css --watch src/\"  \"live-server ./build\""
+    "build": "postcss src/styles.css -o docs/styles.css && cp src/index.html docs/index.html",
+    "serve": "NODE_ENV=development concurrently \"postcss src/tailwind.css -o docs/styles.css --watch src/\"  \"live-server ./docs\""
   },
   "keywords": [],
   "author": "",
